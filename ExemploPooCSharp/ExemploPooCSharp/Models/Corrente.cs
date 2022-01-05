@@ -1,7 +1,10 @@
 namespace ExemploPooCSharp.Models
 {
-    public class Corrente
+    public class Corrente : Conta
     {
-        
+        public override void Creditar(double valor)
+        {
+            base.saldo = valor;
+        }
     }
 }
